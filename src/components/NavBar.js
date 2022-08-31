@@ -18,7 +18,7 @@ import { Link } from "react-router-dom";
 import { appConstants } from "../appConstants";
 
 const drawerWidth = 240;
-const navItems = ["About", "Contact"];
+const navItems = ["about", "contact"];
 
 function NavBar(props) {
   const { window } = props;
@@ -78,7 +78,7 @@ function NavBar(props) {
           >
             <Link to="/">{appConstants.name}</Link>
           </Typography>
-          <Box sx={{ display: { xs: "none", sm: "block" } }}>
+          <Box sx={{ display: { xs: "none", sm: "flex" } }}>
             {navItems.map((item) => (
               <Button
                 key={item}
